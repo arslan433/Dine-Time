@@ -1,15 +1,18 @@
 import { RelativePathString, router, useRouter } from "expo-router";
-import { StatusBar, Text, TouchableOpacity, View } from "react-native";
-
+import { Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+const logo = require("../assets/images/dinetimelogo.png")
 export default function Index() {
   const router = useRouter()
   return (
-    <View
-      className="flex-1 items-center justify-center">
-      <Text className="text-xl text-black-700">Edit app/index.tsx to edit this screen.</Text>
-      <TouchableOpacity onPress={() => router.push("/home" as RelativePathString)} >
-        <Text>Change Route</Text>
-      </TouchableOpacity>
-    </View>
+    <SafeAreaView className="bg-[#2b2b2b]">
+      <StatusBar barStyle={'light-content'} backgroundColor={"#2b2b2b"}/>
+      <ScrollView contentContainerStyle={{height:"100%"}}>
+
+      <View>
+        <Image source={logo} style={{ height: 300, width: 300 }} />
+      </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
