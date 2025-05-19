@@ -20,7 +20,7 @@ export default function Index() {
             </TouchableOpacity>
           </View>
           <View>
-            <Text className="text-base text-white font-semibold my-4">
+            <Text className="text-base  text-white font-semibold my-4">
               <View className="border-b-2 border-[#f79f2c] p-2 m-2 w-24" /> or{" "}
               <View className="border-b-2 border-[#f79f2c] p-2 m-2 w-24" />
             </Text>
